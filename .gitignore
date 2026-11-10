@@ -1,0 +1,32 @@
+# --- Secret: KHÔNG BAO GIỜ commit ---
+.env
+kaggle.json
+**/kaggle.json
+
+# --- Model và dữ liệu: không lưu trong git ---
+# Model nằm trong MLflow registry; dữ liệu tải bằng script fetch (TV2)
+*.pkl
+data/raw/
+data/processed/
+mlruns/
+mlartifacts/
+*.db
+
+# --- Log chạy thật ---
+artifacts/production_logs.csv
+logs/
+*.log
+*.jsonl
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
